@@ -8,7 +8,8 @@ node {
   stage('Call script'){
     print "version: " + version
     print "file: " + file
-    sh './scripts/test.sh ${file} ${version}'
+    dir('scripts') {
+      sh './test.sh ${file} ${version}'
   }
 
 }
