@@ -1,4 +1,5 @@
-pipeline {
+node {
+    def workspace = pwd()
   agent any
   stages {
     stage('Clone') {
