@@ -9,7 +9,7 @@ node {
     print "version: " + version
     print "file: " + file
     dir('scripts') {
-      sh './test.sh ${file} ${version}'
+      sh "./test.sh '${file} ${version}'"
   }
 
 }
