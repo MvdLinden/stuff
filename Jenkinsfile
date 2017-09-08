@@ -1,7 +1,6 @@
 node {
   def workspace = pwd()
-  def version = "asda-121"
-  def file = "bla/bla.sh"
+  def version = "1.2.4"
   stage('Clone') {
       git(url: 'https://github.com/MvdLinden/stuff.git', branch: 'master', credentialsId: 'MvdLinden')
   }
@@ -9,7 +8,7 @@ node {
     print "version: " + version
     print "file: " + file
     dir('scripts') {
-      sh "./test.sh ${file} ${version}"
+      sh "./test.sh ${version}"
     }
   }
 }
