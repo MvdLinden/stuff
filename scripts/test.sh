@@ -4,7 +4,7 @@
 # param 2: nexus url with new version of image
 if [  $# -le 1 ]
   then
-		echo "[Usage: test.sh p1]
+		echo "[Usage: test.sh p1]"
 		exit 1
 fi
 echo "Run script"
