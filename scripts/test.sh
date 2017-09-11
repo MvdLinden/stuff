@@ -1,10 +1,10 @@
 #!/bin/sh
 
-# param 1: docker compose file that will be updated
 # param 2: nexus url with new version of image
+echo "params: "$#
 if [  $# -le 1 ]
   then
-		echo "[Usage: test.sh p1]"
+		echo "Missing parameter. \n[Usage: test.sh p1]"
 		exit 1
 fi
 echo "Run script"
