@@ -1,1 +1,1 @@
-image: jenkins-rabo:1.2.3
+image: jenkins-rabo:1.2.4
